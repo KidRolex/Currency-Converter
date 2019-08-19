@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#333" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <h1 class="display-4 text-center mb-3">
+            NairaVartar
+          </h1>
+          <form>
+            <div class="form-group container-fluid">
+              <input
+                type="number"
+                class="form-control form-control-lg"
+                id="lbsInput"
+                placeholder="Enter Amount In Naira"
+                required
+              />
+            </div>
+          </form>
+          <div id="output">
+            <div class="card bg-primary mb-2">
+              <div class="card-block">
+                <h4>USD Dollars:</h4>
+                <div id="dollars">0</div>
+              </div>
+            </div>
+
+            <div class="card bg-success mb-2">
+              <div class="card-block">
+                <h4>Pounds :</h4>
+                <div id="pounds"></div>
+              </div>
+            </div>
+
+            <div class="card bg-success mb-2">
+              <div class="card-block">
+                <h4>Cedi :</h4>
+                <div id="cedis"></div>
+              </div>
+            </div>
+
+            <div class="card bg-danger mb-2">
+              <div class="card-block">
+                <h4>Rands :</h4>
+                <div id="rands"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="text-center">Developed By Bankole Ahmed</p>
+    <script src="js/main.js"></script>
+    <script src="js/sw.js"></script>
+  </body>
+</html>
